@@ -1,5 +1,121 @@
-<div>
-	<h2> Listado de productos </h2>
-</div>
+<div class="container-fluid" style="height: auto;">
+	<div class="row">
+		<header class="p-3 bg-dark text-white border-bottom">
+			<div class="container">
+				<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+					<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+						<svg class="bi bi-bank me-2" width="40" height="30">
+							<use xlink:href="#empresa"></use>
+						</svg>
+					</a>
 
-<router-outlet></router-outlet>
+					<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+						<li><a href="#" class="nav-link px-2 link-secondary"> Home </a></li>
+						<li><a href="#" class="nav-link px-2 text-white"> Categorias </a></li>
+						<li><a href="#" class="nav-link px-2 text-white"> Productos </a></li>
+					</ul>
+
+					<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+						<input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+					</form>
+
+					<a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
+						style="margin-right: 8px;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" fill="white"
+							class="bi bi-bell-fill" viewBox="0 0 16 16">
+							<path
+								d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+						</svg>
+					</a>
+
+					<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white"
+						class="bi bi-person-circle" viewBox="0 0 16 16">
+						<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+						<path fill-rule="evenodd"
+							d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+					</svg>
+
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="container-fluid" style="padding: 0; height: 500px; margin-top: -1px; background-color: #212529;">
+		<div class="row" style="height: 100%;">
+			<div class="col-2" style="background-color: #212529;">
+				<div class="d-flex flex-column flex-shrink-0 text-white bg-dark p-2"
+					style="height: 100%;">
+					<a href="/"
+						class="d-flex align-items-center mb-3 ml-3 mb-md-0 me-md-auto text-white text-decoration-none">
+						<svg class="bi bi-bank me-2" width="40" height="30">
+							<use xlink:href="#empresa"></use>
+						</svg>
+						<span class="fs-4"> Empresa </span>
+					</a>
+					<hr>
+					<ul class="nav nav-pills flex-column mb-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link text-white" aria-current="page">
+								<svg class="bi me-2" width="20" height="20" fill="white">
+									<use xlink:href="#home"></use>
+								</svg>
+								Mis Datos
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-white">
+								<svg class="bi me-2" width="20" height="20" fill="white">
+									<use xlink:href="#speedometer2"></use>
+								</svg>
+								Dashboard Ventas
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-white">
+								<svg class="bi me-2" width="20" height="20" fill="white">
+									<use xlink:href="#table"></use>
+								</svg>
+								Usuarios
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-white active">
+								<svg class="bi me-2" width="20" height="20" fill="white">
+									<use xlink:href="#grid"></use>
+								</svg>
+								Productos
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-white">
+								<svg class="bi me-2" width="20" height="20" fill="white">
+									<use xlink:href="#people-circle"></use>
+								</svg>
+								Clientes
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col" style="background-color:green;">
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<footer class="py-2" style="background-color: #212529; height: 130px;">
+			<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Productos</a></li>
+				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Categoria</a></li>
+			</ul>
+			<p class="text-center text-muted">2021 - Pacha Leonel - leonelpacha14@gmail.com</p>
+		</footer>
+	</div>
+
+
+
+</div>
