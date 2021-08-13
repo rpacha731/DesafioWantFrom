@@ -5,4 +5,4 @@ Este proyecto está realizado con Angular version 12.2.0 para la admisión en la
 Funcionalidades: 
     - Listar productos desde un Array predeterminado
     - Ordenar los productos según sus atributos
-    - Buscar productos según sus atributos
+    - Buscar productos según sus atributos (Sin implementar)

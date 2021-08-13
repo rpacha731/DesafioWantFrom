@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Producto } from './producto.model';
 
 @Component({
@@ -8,6 +8,7 @@ import { Producto } from './producto.model';
 })
 export class AppComponent {
 	titulo = 'DesafioWantFrom';
+
 	productos: Array<Producto> = // Id, Nombre, Precio, Categoria, Marca, Stock, Estado, Destacado
 		[new Producto(1, "IPhone 12", 125500, "Celulares", "Apple", 10, true, true),
 		new Producto(2, "IPhone 11", 100000, "Celulares", "Apple", 0, false, false),
@@ -83,7 +84,5 @@ export class AppComponent {
 		}
 	}
 
-	buscar() {
-
-	}
 }
+
