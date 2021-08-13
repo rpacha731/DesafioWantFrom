@@ -163,7 +163,7 @@
 								<option value=""> Activos </option>
 								<option value=""> Inactivos </option>
 							</select> </td>
-						<td class="tds"> <button class="btn btn-sm btn-primary d-flex align-items-center"> <svg
+						<td class="tds"> <button class="btn btn-sm btn-primary d-flex align-items-center" (click)="buscar();"> <svg
 									xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-arrow-repeat">
 									<path
@@ -219,18 +219,18 @@
 					</thead>
 					<tbody>
 						<tr *ngFor="let prod of productos;">
-							<th scope="row"> {{ prod.id }} </th>
-							<td> {{ prod.nombre }} </td>
-							<td> {{ prod.precio | currency}} </td>
-							<td> {{ prod.categoria }} </td>
-							<td> {{ prod.marca }} </td>
-							<td> <span *ngIf="prod.stock == 0; else mas"> - </span>
-								<ng-template #mas> {{ prod.stock }} </ng-template>
+							<th scope="row"> {{ prod.getId() }} </th>
+							<td> {{ prod.getNombre() }} </td>
+							<td> {{ prod.getPrecio() | currency}} </td>
+							<td> {{ prod.getCategoria() }} </td>
+							<td> {{ prod.getMarca() }} </td>
+							<td> <span *ngIf="prod.getStock() == 0; else mas"> - </span>
+								<ng-template #mas> {{ prod.getStock() }} </ng-template>
 							</td>
-							<td> <span *ngIf="prod.estado; else noactivo"> Activo </span>
+							<td> <span *ngIf="prod.getEstado(); else noactivo"> Activo </span>
 								<ng-template #noactivo> Inactivo </ng-template>
 							</td>
-							<td> <span *ngIf="prod.destacado; else nodest"> Sí </span>
+							<td> <span *ngIf="prod.getDestacado(); else nodest"> Sí </span>
 								<ng-template #nodest> No </ng-template>
 							</td>
 							<td style="width: 20px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"

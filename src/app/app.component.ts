@@ -31,55 +31,59 @@ export class AppComponent {
 	ordenar(opt: string) {
 		if (opt.includes("id")) {
 			this.productos.sort((p1, p2) => {
-				if (p1.id > p2.id) return 1;
-				if (p1.id < p2.id) return -1;
+				if (p1.getId() > p2.getId()) return 1;
+				if (p1.getId() < p2.getId()) return -1;
 				return 0;
 			});
 		}
 		if (opt.includes("nombre")) {
 			this.productos.sort((p1, p2) => {
-				if (p1.nombre > p2.nombre) return 1;
-				if (p1.nombre < p2.nombre) return -1;
+				if (p1.getNombre() > p2.getNombre()) return 1;
+				if (p1.getNombre() < p2.getNombre()) return -1;
 				return 0;
 			});
 		}
 		if (opt.includes("precio")) {
 			this.productos.sort((p1, p2) => {
-				if (p1.precio > p2.precio) return 1;
-				if (p1.precio < p2.precio) return -1;
+				if (p1.getPrecio() > p2.getPrecio()) return 1;
+				if (p1.getPrecio() < p2.getPrecio()) return -1;
 				return 0;
 			});
 		}
 		if (opt.includes("catego")) {
 			this.productos.sort((p1, p2) => {
-				if (p1.categoria > p2.categoria) return 1;
-				if (p1.categoria < p2.categoria) return -1;
+				if (p1.getCategoria() > p2.getCategoria()) return 1;
+				if (p1.getCategoria() < p2.getCategoria()) return -1;
 				return 0;
 			});
 		}
 		if (opt.includes("marca")) {
 			this.productos.sort((p1, p2) => {
-				if (p1.marca > p2.marca) return 1;
-				if (p1.marca < p2.marca) return -1;
+				if (p1.getMarca() > p2.getMarca()) return 1;
+				if (p1.getMarca() < p2.getMarca()) return -1;
 				return 0;
 			});
 		}
 		if (opt.includes("stock")) {
 			this.productos.sort((p1, p2) => {
-				if (p1.stock < p2.stock) return 1;
-				if (p1.stock > p2.stock) return -1;
+				if (p1.getStock() < p2.getStock()) return 1;
+				if (p1.getStock() > p2.getStock()) return -1;
 				return 0;
 			});
 		}
 		if (opt.includes("estado")) {
 			this.productos.sort((p1, p2) => {
-				return (p1.estado === p2.estado) ? 0 : p1.estado ? -1 : 1;
+				return (p1.getEstado() === p2.getEstado()) ? 0 : p1.getEstado() ? -1 : 1;
 			});
 		}
 		if (opt.includes("destac")) {
 			this.productos.sort((p1, p2) => {
-				return (p1.destacado === p2.destacado) ? 0 : p1.destacado ? -1 : 1;
+				return (p1.getDestacado() === p2.getDestacado()) ? 0 : p1.getDestacado() ? -1 : 1;
 			});
 		}
+	}
+
+	buscar() {
+
 	}
 }
